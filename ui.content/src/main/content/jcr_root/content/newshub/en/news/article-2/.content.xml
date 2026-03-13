@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+        xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+        xmlns:jcr="http://www.jcp.org/jcr/1.0"
+        xmlns:cq="http://www.day.com/jcr/cq/1.0"
+        jcr:primaryType="cq:Page">
+
+    <jcr:content
+            jcr:primaryType="cq:PageContent"
+            sling:resourceType="newshub/components/article"
+            jcr:title="Tech Giants Report Record Profits"
+            subtitle="Q4 earnings exceed analyst expectations"
+            authorRef="/content/newshub/authors/john-smith"
+            publishDate="{Date}2024-06-20T14:30:00.000+05:30"
+            cq:tags="[newshub:topics/technology,newshub:topics/business]" />
+
+</jcr:root>

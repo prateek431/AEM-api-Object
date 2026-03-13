@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:tags="[]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Breaking: Storm Hits Coast"
+        sling:resourceType="newshub/components/article"
+        authorRef="/content/newshub/authors/jane-doe"
+        publishDate="{Date}2024-03-15T09:00:00.000+05:30"
+        subtitle="Thousands evacuated as Category 4 approaches"/>
+</jcr:root>
