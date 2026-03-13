@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.prateek.core.schedulers.ArticleToArchiveScheduler" activate="activate">
+  <property name="scheduler.expression" type="String" value="0 0 3 * * ?"/>
+  <property name="scheduler.concurrent" type="Boolean" value="false"/>
+  <service>
+    <provide interface="java.lang.Runnable"/>
+  </service>
+  <reference name="resolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" field="resolverFactory"/>
+  <implementation class="com.prateek.core.schedulers.ArticleToArchiveScheduler"/>
+</scr:component>

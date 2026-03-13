@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.prateek.core.schedulers.DemoScheduler$abc">
+  <OCD id="com.prateek.core.schedulers.DemoScheduler$abc" name="Demo Scheduler" description="">
+    <AD id="scheduler.enabled" type="Boolean" name="Scheduler Enabled" description="Enabled or Disable Scheduler" default="true"/>
+    <AD id="scheduler.expression" type="String" name="Cron Expression" description="Scheduler Cron Expression" default="0\ 0/5\ *\ *\ *\ ?"/>
+  </OCD>
+  <Designate pid="com.prateek.core.schedulers.DemoScheduler">
+    <Object ocdref="com.prateek.core.schedulers.DemoScheduler$abc"/>
+  </Designate>
+</metatype:MetaData>

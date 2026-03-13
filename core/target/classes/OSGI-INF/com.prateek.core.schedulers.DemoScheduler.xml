@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.prateek.core.schedulers.DemoScheduler" activate="activate" deactivate="deactivate">
+  <property name="scheduler.enabled" type="Boolean" value="true"/>
+  <property name="scheduler.expression" type="String" value="0 0/5 * * * ?"/>
+  <service>
+    <provide interface="java.lang.Runnable"/>
+  </service>
+  <reference name="autoPublishService" interface="com.prateek.core.service.AutoPublishService" field="autoPublishService"/>
+  <reference name="scheduler" interface="org.apache.sling.commons.scheduler.Scheduler" field="scheduler"/>
+  <implementation class="com.prateek.core.schedulers.DemoScheduler"/>
+</scr:component>

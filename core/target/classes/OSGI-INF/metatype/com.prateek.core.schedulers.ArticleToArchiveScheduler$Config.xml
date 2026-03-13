@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.prateek.core.schedulers.ArticleToArchiveScheduler$Config">
+  <OCD id="com.prateek.core.schedulers.ArticleToArchiveScheduler$Config" name="NewsHub — Automatic Article Archiver" description="Moves articles older than 365 days from /news to /archive every day at 3:00 AM">
+    <AD id="scheduler.expression" type="String" name="Cron-job expression" default="0\ 0\ 3\ *\ *\ ?"/>
+    <AD id="scheduler.concurrent" type="Boolean" name="Concurrent task" description="Whether to allow concurrent execution of this scheduler" default="false"/>
+  </OCD>
+  <Designate pid="com.prateek.core.schedulers.ArticleToArchiveScheduler">
+    <Object ocdref="com.prateek.core.schedulers.ArticleToArchiveScheduler$Config"/>
+  </Designate>
+</metatype:MetaData>
